@@ -51,7 +51,7 @@ const Post: React.FC<IPosts> = ({ key, post }) => {
   };
 
   const handleLike = () => {
-    console.log("object");
+    
     setHandledLike(!handledLike);
     if (!handledLike) {
       dispatch(

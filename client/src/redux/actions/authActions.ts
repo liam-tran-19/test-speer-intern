@@ -45,7 +45,7 @@ export const register = ({ _id, username, email, password }: IAuthFunction) => (
   };
 
   // Request body
-  const body = JSON.stringify({_id, username, email, password });
+  const body = {_id, username, email, password };
 
   axios
     .post('/api/auth/register', body, config)
